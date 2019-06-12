@@ -14,7 +14,7 @@
         computed: {
         },
         onShow(){
-            console.log(Megalo.getEnv())
+            console.log(dd === my)
             this.toast();
         },
         onHide(){
