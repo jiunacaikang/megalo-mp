@@ -7,6 +7,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const _ = require("./util");
 const appMainFile = _.resolve("src/app.js");
@@ -162,7 +163,10 @@ function createBaseConfig(platform = "wechat", isDev = true) {
                     from: "src/static/assets",
                     to: "static/assets",
                 },
-            ])
+            ]),
+            new CleanWebpackPlugin({
+                cleanOnceBeforeBuildPatterns:[_.resolve(process.cwd(), 'dist-*')]
+            }),
         ],
         stats: {
             env: true,
