@@ -39,9 +39,16 @@
 <style lang="less">
 .container{
     width: 7.5rem;
-    background: red;
     display: flex;
     flex-direction: column;
+    .we-row{
+        display: flex;
+        flex-direction: row;
+        .we-row-item{
+            color: blue;
+            font-size:0.32rem;
+        }
+    }
 }
 </style>
 
