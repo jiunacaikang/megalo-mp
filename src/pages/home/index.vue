@@ -1,10 +1,10 @@
 <template lang="pug">
     div
-        .title index页面
+        .title mine页面
 </template>
 
 <script>
-    export default {
+    export default {  
         name: "index",
         components:{},
         data() {
@@ -14,7 +14,7 @@
         computed: {
         },
         onShow(){
-            console.log(dd === my)
+            //console.log(dd === my)
             this.toast();
         },
         onHide(){

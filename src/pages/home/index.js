@@ -7,6 +7,6 @@ app.$mount()
 
 export default {
     config: {
-        navigationBarTitleText: 'index',
+        navigationBarTitleText: '首页',
     }
 }
