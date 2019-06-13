@@ -1,7 +1,4 @@
-# Megalo
-
 ## 运行
-
 
 ```bash
 安装依赖：npm i
@@ -17,6 +14,6 @@
 支付宝小程序：
 
 ```bash
-开发：npm run test:alipay
+开发：npm run dev:alipay
 生产：npm run build:alipay
 ```
