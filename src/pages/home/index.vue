@@ -14,7 +14,7 @@
         computed: {
         },
         onShow(){
-            console.log(dd === my)
+            //console.log(dd === my)
             this.toast();
         },
         onHide(){
