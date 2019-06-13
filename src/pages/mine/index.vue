@@ -1,6 +1,7 @@
 <template lang="pug">
-    div
-        .title mine页面
+    .container
+        .we-row 
+            .we-row-item 这是一段文字
 </template>
 
 <script>
@@ -34,15 +35,10 @@
     };
 </script>
 <style lang="less">
-.title{
-    width: 80%;
-    height: 1rem;
-    line-height: 1rem;
-    background: #efefef;
-    color:#000;
-    border-radius: 0.1rem;
-    margin:1rem auto;
-    font-size: 0.4rem;
-    text-align: center;
+.container{
+    width: 7.5rem;
+    background: red;
+    display: flex;
+    flex-direction: column;
 }
 </style>
