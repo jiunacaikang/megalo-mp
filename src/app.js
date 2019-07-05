@@ -5,6 +5,7 @@ import VHtmlPlugin from "@megalo/vhtml-plugin";
 import "@/css/reset.less";
 import Storage from "@/utils/storage";
 
+//全局使用storage
 const storage = new Storage();
 
 const {windowWidth} = Megalo.getSystemInfoSync();
